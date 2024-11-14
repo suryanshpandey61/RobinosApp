@@ -9,86 +9,76 @@ import bolt from '../assets/bolt.svg';
 import wishlistBtn from '../assets/wishlist btn.svg'
 function Hero2() {
   return (
-    <div className='flex mt-6 w-[1120px] gap-x-4 mx-auto'>
-        {/* forecaster membership  div  */}
-        <div className='mb-5'>
-        <div className='w-full lg:w-[680px] h-[380px] border bg-[#101010] text-white rounded-md border-slate-800 relative mt-6 lg:mt-0'>
-        {/* top text  */}
-        <div className='flex flex-col justify-between'>
-            <div className='absolute'>
-                <img src={Cross} />
-            </div>
-            <div className='w-[50px] pt-5 pl-5'>
-                <p className='font-clash font-medium leading-[15.22px] text-[22px]'>
-                    ForeCaster <br /><br />Membership 
-                </p>
-            </div>
-            {/*4 icon text-div  */}
-            <div className='flex mt-3 flex-col pl-5 w-[400px]'>
-                {/* power burn  */}
-                <div className='flex  pt-[50px] gap-x-[80px] text-[14px]'>
-                    {/* power text */}
-                    <div className='flex gap-x-2'>
-                        <img src={powerLogo}/>
-                        <span>Power<span className='text-[#616161]'> your NFT</span></span>
-                    </div>
-                    {/* burn text  */}
-                    <div className='flex gap-x-2'>
-                      <img src={Burnlogo}/>
-                      <span>Burn <span className='text-[#616161]'> your Hunch</span></span>
-                    </div>
+    <div className='flex ml-[70px]   flex-col lg:flex-row mt-6 gap-4 mx-auto'>
+    {/* Forecaster Membership Section */}
+    <div className='mb-5'>
+        <div className='w-full lg:w-[680px] h-[360px] border bg-[#101010] text-white rounded-md border-slate-800 relative mt-6 lg:mt-0'>
+            {/* Top Text */}
+            <div className='flex flex-col justify-between'>
+                <div className='absolute'>
+                    <img src={Cross} className="w-8 h-8"/>
+                </div>
+                <div className='w-[50px] pt-5 pl-5'>
+                    <p className='font-clash font-medium leading-[15.22px] text-[22px]'>
+                        ForeCaster <br /><br />Membership 
+                    </p>
                 </div>
 
-                {/* lock recieve  */}
+                {/* Icon Text Div */}
+                <div className='flex flex-col pl-5 w-full lg:w-[400px] mt-3'>
+                    {/* Power and Burn Section */}
+                    <div className='flex flex-col sm:flex-row gap-8 sm:gap-20 text-[14px]'>
+                        {/* Power */}
+                        <div className='flex gap-x-2'>
+                            <img src={powerLogo} className="w-6 h-6"/>
+                            <span>Power <span className='text-[#616161]'>your NFT</span></span>
+                        </div>
+                        {/* Burn */}
+                        <div className='flex gap-x-2'>
+                            <img src={Burnlogo} className="w-6 h-6"/>
+                            <span>Burn <span className='text-[#616161]'>your Hunch</span></span>
+                        </div>
+                    </div>
+
+                    {/* Lock and Receive Section */}
+                    <div className='pt-3 flex flex-col sm:flex-row gap-8 sm:gap-20 text-[14px]'>
+                        {/* Lock */}
+                        <div className='flex gap-x-2'>
+                            <img src={orangeCircle} className="w-6 h-6"/>
+                            <span>Lock <span className='text-[#616161]'>your 4cast</span></span>
+                        </div>
+                        {/* Receive */}
+                        <div className='flex gap-x-2'>
+                            <img src={bolt} className="w-6 h-6"/>
+                            <span>Receive <span className='text-[#616161]'>Delegations</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            {/* Join Wishlist Section */}
+            <div className='flex pl-5 mt-8 bg-[#181818] ml-2 rounded-xl px-2 py-5 w-full lg:w-[400px]'>
+                <div className='w-full sm:w-[200px]'>
+                    <span className='text-[#616161]'>
+                        Mint your NFT to unlock unique features
+                    </span>
+                </div>
                 <div>
-                    {/* lock  */}
-                    <div className='pt-3 flex gap-x-[80px] text-[14px]'>
-                    <div className='flex gap-x-2'>
-                        <img src={orangeCircle}/>
-                        <span>Lock<span className='text-[#616161]'> your 4cast</span></span>
-                    </div>
-                    <div className='flex gap-x-2'>
-                        <img src={bolt}/>
-                        <span>Recieve<span className='text-[#616161]'> Delegations</span></span>
-                    </div>
-
-                    </div>
+                    <img src={wishlistBtn} className=""/>
                 </div>
-
-
+                <div>
+                    <img src={LuliImage} className='absolute top-[-90px] w-[500px] left-[80%] transform -translate-x-[50%]' />
+                </div>
             </div>
-           
-        </div>
-        
-   {/* join wishlist wali big div  */}
-   <div className='flex pl-5 mt-[50px] bg-[#181818]  ml-2 rounded-xl px-2 py-5 w-[400px]  '>
-            <div className='w-[200px]'>
-                <span className='text-[#616161]'>
-                    Mint your NFT to unlock unique features
-                </span>
-            </div>
-            {/* wishlist btn  */}
-            <div>
-                <img src={wishlistBtn}/>
-
-            </div>
-            <div>
-            <img src={LuliImage} className='absolute top-[-90px] w-[500px] left-[300px] '/>
-        </div>
-        </div>
-        
-
-       
-        </div>
-        
-     
-           
-        </div>
-        {/* rigth image div  */}
-        <div className=''>
-            <img src={DelegateImage} className='h-[380px]'/>
         </div>
     </div>
+
+    {/* Right Image Section */}
+    <div className='lg:w-[480px] w-full'>
+        <img src={DelegateImage} className=' object-cover' />
+    </div>
+</div>
+
   )
 }
 
