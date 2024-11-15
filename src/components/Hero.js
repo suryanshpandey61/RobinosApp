@@ -105,31 +105,33 @@ function Hero() {
       </div>
   
       {/* Bottom Hunch Shop Long Div */}
-      <div className="w-full lg:w-[696px] flex items-center mt-3 h-[110px] border bg-[#101010] text-white rounded-md border-slate-800 relative">
-        {/* Star Image Div */}
-        <div>
-          <img src={CirculerStar} className="relative ml-4" />
-        </div>
-  
-        {/* Text Div */}
-        <div className="flex flex-col gap-y-1">
-          <p className="font-clash font-medium leading-[15.22px] text-[16px]">
-            Hunch Shop
-          </p>
-          <p className="font-clash font-medium text-[15px] leading-[15.22px]">
-            <span className="text-[#616161]">Exchange your Hunch for valuable assets!</span>
-          </p>
-        </div>
-  
-        <div className="flex gap-x-3">
-          <div>
-            <img src={OpenShopbtn} />
-          </div>
-          <div>
-            <img src={BuyBtn} />
-          </div>
-        </div>
-      </div>
+<div className="w-full lg:w-[696px] flex flex-col lg:flex-row items-center mt-3 h-[110px] border bg-[#101010] text-white rounded-md border-slate-800 relative">
+  {/* Star Image Div */}
+  <div className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10">
+    <img src={CirculerStar} className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
+  </div>
+
+  {/* Text Div */}
+  <div className="flex flex-col gap-y-1 pl-16 lg:pl-20">
+    <p className="font-clash font-medium leading-[15.22px] text-[16px]">
+      Hunch Shop
+    </p>
+    <p className="font-clash font-medium text-[15px] leading-[15.22px]">
+      <span className="text-[#616161]">Exchange your Hunch for valuable assets!</span>
+    </p>
+  </div>
+
+  {/* Buttons Div */}
+  <div className="flex gap-x-3 mt-3 lg:mt-0 ml-16 ">
+    <div>
+      <img src={OpenShopbtn} className="w-[50px] lg:w-[120px]" />
+    </div>
+    <div>
+      <img src={BuyBtn} className="w-[50px] lg:w-[120px]" />
+    </div>
+  </div>
+</div>
+
   
     </div>
   

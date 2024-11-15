@@ -9,7 +9,7 @@ import bolt from '../assets/bolt.svg';
 import wishlistBtn from '../assets/wishlist btn.svg'
 function Hero2() {
   return (
-    <div className='flex ml-[75px]   flex-col lg:flex-row mt-6 gap-4 mx-auto'>
+    <div className='flex  lg:ml-[70px]  flex-col lg:flex-row mt-6 gap-4 mx-auto'>
     {/* Forecaster Membership Section */}
     <div className='mb-5'>
         <div className='w-full lg:w-[680px] h-[360px] border bg-[#101010] text-white rounded-md border-slate-800 relative mt-6 lg:mt-0'>
