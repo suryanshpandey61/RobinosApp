@@ -112,8 +112,8 @@ function Hero() {
   </div>
 
   {/* Text Div */}
-  <div className="flex flex-col gap-y-1 pl-16 lg:pl-20">
-    <p className="font-clash font-medium leading-[15.22px] text-[16px]">
+  <div className="flex flex-col gap-y-1  pl-16 lg:pl-20">
+    <p className="font-clash font-medium leading-[15.22px]  text-[16px]">
       Hunch Shop
     </p>
     <p className="font-clash font-medium text-[15px] leading-[15.22px]">
