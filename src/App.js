@@ -5,7 +5,7 @@ import Hero2 from './components/Hero2';
 
 function App() {
   return (
-    <div className="App bg-black ">
+    <div className="overflow-x-hidden bg-black ">
      <Header/>
      <Hero/>
      <Hero2/>
