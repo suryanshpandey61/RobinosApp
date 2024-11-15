@@ -124,10 +124,10 @@ function Hero() {
   {/* Buttons Div */}
   <div className="flex gap-x-3 mt-3 lg:mt-0 ml-16 ">
     <div>
-      <img src={OpenShopbtn} className="w-[50px] lg:w-[120px]" />
+      <img src={OpenShopbtn} className="sm:w-[50px] md:w-[80px] lg:w-[120px]" />
     </div>
     <div>
-      <img src={BuyBtn} className="w-[50px] lg:w-[120px]" />
+      <img src={BuyBtn} className="sm:w-[50px] md:w-[80px] lg:w-[120px]" />
     </div>
   </div>
 </div>
